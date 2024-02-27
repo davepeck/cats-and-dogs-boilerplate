@@ -1,28 +1,34 @@
 {
   "name": "cats-and-dogs-boilerplate",
   "description": "Cats & Dogs Boilerplate",
+  "private": true,
+  "type": "module",
   "author": "Dave Peck <davepeck@gmail.com>",
-  "version": "0.0.5",
+  "version": "0.1.0",
   "license": "MIT",
-  "browserslist": "> 0.5%, last 2 versions, not dead",
-  "engines": {
-    "node": "^18",
-    "npm": "^8"
+  "dependencies": {
+    "react": "^18",
+    "react-dom": "^18"
   },
   "devDependencies": {
     "@types/react": "^18",
     "@types/react-dom": "^18",
-    "parcel": "^2",
-    "react": "^18",
-    "react-dom": "^18",
-    "typescript": "^4",
+    "@typescript-eslint/eslint-plugin": "^7",
+    "@typescript-eslint/parser": "^7.0.2",
+    "@vitejs/plugin-react": "^4.2.1",
+    "eslint": "^8.56.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.5",
+    "typescript": "^5.2.2",
+    "vite": "^5.1.4",
     "vscode-css-languageservice": "^6"
   },
   "scripts": {
-    "start": "parcel src/index.html",
-    "build": "parcel build src/index.html",
-    "ci": "npm run type-check && npm run validate-css",
-    "type-check": "tsc --noEmit",
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview",
+    "ci": "npm run lint && npm run validate-css",
     "validate-css": "node scripts/validate-css.mjs src"
   }
 }

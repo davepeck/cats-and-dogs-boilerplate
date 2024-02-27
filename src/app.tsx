@@ -1,8 +1,11 @@
-/** Our main react component. Included by index.html. Start by writing your code here. */
+import "./normalize.css";
+import "./App.css";
+
+/** Our main react component. Start by writing your code here. */
 export const App: React.FC = () => (
   <div>
     <h1>Cats &amp; Dogs Boilerplate!</h1>
     <h1>🐱🐶</h1>
-    <p>Version 0.0.5</p>
+    <p>Version 0.1.0</p>
   </div>
 );

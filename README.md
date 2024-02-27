@@ -1,6 +1,6 @@
 # 🐱 And 🐶 Boilerplate
 
-Version `0.0.5` by `Ellie` and Daddy aka `Dave Peck <davepeck@gmail.com>`.
+Version `0.1.0` by `Ellie` and Daddy aka `Dave Peck <davepeck@gmail.com>`.
 
 ### What is this?
 
@@ -12,15 +12,15 @@ Version `0.0.5` by `Ellie` and Daddy aka `Dave Peck <davepeck@gmail.com>`.
 
 ### Getting set up
 
-You'll need to install [Node 18](https://nodejs.dev).
+You'll need to install [Node 20](https://nodejs.dev).
 
-There are lots of ways to do this; it depends on your own set-up. (I have a mac with `asdf` installed, so I do `asdf install nodejs 18.12.1`, for example.)
+There are lots of ways to do this; it depends on your own set-up. If you have a Mac, consider [installing node via HomeBrew](https://brew.sh).
 
-Then clone this repository, `npm install`, change the `CNAME` to the name of the website you want to deploy to, and get coding on `app.tsx` and `index.css`.
+Then clone this repository, `npm install`, change the `CNAME` to the name of the website you want to deploy to, and get coding on `App.tsx` and `App.css`.
 
 ### How do I run a development server?
 
-Use `npm run start` and visit http://localhost:1234/. It'll automatically refresh when you change most app content.
+Use `npm run dev` and visit http://localhost:5173/. It'll automatically refresh when you change most app content.
 
 ### How do I deploy the code I've written?
 
@@ -44,9 +44,9 @@ If something 🐱 feels missing to you, please submit a PR that adds it. And if 
 
 This template:
 
-- Uses [ParcelJS 2](https://parceljs.org) for bundling
+- Uses [Vite 5](https://vitejs.dev) as our key frontend tool
 - Includes [React 18](https://reactjs.org)
-- Includes [TypeScript 4](https://www.typescriptlang.org)
+- Includes [TypeScript 5](https://www.typescriptlang.org)
 - Contains out-of-the-box configuration for [VS Code](https://code.visualstudio.com) that lints and formats on every save with VSCode's built-in rules
 - Includes [modern-normalize](https://github.com/sindresorhus/modern-normalize)
 - Has built-in [GitHub Actions](https://github.com/features/actions) to automatically deploy changes to the main branch to [GitHub Pages](https://pages.github.com), a static web host.
