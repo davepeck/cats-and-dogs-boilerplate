@@ -1,6 +1,6 @@
 # 🐱 And 🐶 Boilerplate
 
-Version `0.1.0` by `Ellie` and Daddy aka `Dave Peck <davepeck@gmail.com>`.
+Version `0.1.5` by `Ellie` and Daddy aka `Dave Peck <davepeck@gmail.com>`.
 
 ### What is this?
 
